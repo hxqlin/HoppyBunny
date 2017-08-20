@@ -161,6 +161,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 ground.position = self.convert(newPosition, to: scrollLayer)
             }
         }
+        
     }
     
     func updateObstacles() {
@@ -225,6 +226,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             /* Update score label */
             scoreLabel.text = String(points)
+            
+            /* Play SFX */
+            let goalSFX = SKAction.playSoundFileNamed("sfx_goal", waitForCompletion: false)
+            self.run(goalSFX)
             
             /* We can return now */
             return
