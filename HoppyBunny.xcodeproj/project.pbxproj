@@ -11,6 +11,9 @@
 		BB00EE2E1F490C9E005C8A99 /* Obstacle.sks in Resources */ = {isa = PBXBuildFile; fileRef = BB00EE2D1F490C9E005C8A99 /* Obstacle.sks */; };
 		BB00EE301F4917A7005C8A99 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00EE2F1F4917A7005C8A99 /* MSButtonNode.swift */; };
 		BB00EE381F4A2D1A005C8A99 /* GameEffects.sks in Resources */ = {isa = PBXBuildFile; fileRef = BB00EE371F4A2D1A005C8A99 /* GameEffects.sks */; };
+		BB4DEBB91F4D3E530033B9D7 /* sfx_flap.caf in Resources */ = {isa = PBXBuildFile; fileRef = BB4DEBB61F4D3E530033B9D7 /* sfx_flap.caf */; };
+		BB4DEBBA1F4D3E530033B9D7 /* sfx_goal.caf in Resources */ = {isa = PBXBuildFile; fileRef = BB4DEBB71F4D3E530033B9D7 /* sfx_goal.caf */; };
+		BB4DEBBB1F4D3E530033B9D7 /* sfx_punch.caf in Resources */ = {isa = PBXBuildFile; fileRef = BB4DEBB81F4D3E530033B9D7 /* sfx_punch.caf */; };
 		BBCC54A21F48EB9000A80C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCC54A11F48EB9000A80C63 /* AppDelegate.swift */; };
 		BBCC54A41F48EB9000A80C63 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BBCC54A31F48EB9000A80C63 /* GameScene.sks */; };
 		BBCC54A61F48EB9000A80C63 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = BBCC54A51F48EB9000A80C63 /* Actions.sks */; };
@@ -20,8 +23,6 @@
 		BBCC54AF1F48EB9000A80C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBCC54AE1F48EB9000A80C63 /* Assets.xcassets */; };
 		BBCC54B21F48EB9000A80C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBCC54B01F48EB9000A80C63 /* LaunchScreen.storyboard */; };
 		BBCC54BC1F48EE0200A80C63 /* Hero.sks in Resources */ = {isa = PBXBuildFile; fileRef = BBCC54BB1F48EE0200A80C63 /* Hero.sks */; };
-		BBF384CA1F4A3587007A1289 /* sfx_flap.caf in Resources */ = {isa = PBXBuildFile; fileRef = BBF384C81F4A3587007A1289 /* sfx_flap.caf */; };
-		BBF384CB1F4A3587007A1289 /* sfx_goal.caf in Resources */ = {isa = PBXBuildFile; fileRef = BBF384C91F4A3587007A1289 /* sfx_goal.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,9 @@
 		BB00EE2D1F490C9E005C8A99 /* Obstacle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle.sks; sourceTree = "<group>"; };
 		BB00EE2F1F4917A7005C8A99 /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
 		BB00EE371F4A2D1A005C8A99 /* GameEffects.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameEffects.sks; sourceTree = "<group>"; };
+		BB4DEBB61F4D3E530033B9D7 /* sfx_flap.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_flap.caf; sourceTree = "<group>"; };
+		BB4DEBB71F4D3E530033B9D7 /* sfx_goal.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_goal.caf; sourceTree = "<group>"; };
+		BB4DEBB81F4D3E530033B9D7 /* sfx_punch.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_punch.caf; sourceTree = "<group>"; };
 		BBCC549E1F48EB8F00A80C63 /* HoppyBunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoppyBunny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBCC54A11F48EB9000A80C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBCC54A31F48EB9000A80C63 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -40,8 +44,6 @@
 		BBCC54B11F48EB9000A80C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBCC54B31F48EB9000A80C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBCC54BB1F48EE0200A80C63 /* Hero.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Hero.sks; sourceTree = "<group>"; };
-		BBF384C81F4A3587007A1289 /* sfx_flap.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_flap.caf; sourceTree = "<group>"; };
-		BBF384C91F4A3587007A1289 /* sfx_goal.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_goal.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB4DEBB51F4D3E530033B9D7 /* SFX */ = {
+			isa = PBXGroup;
+			children = (
+				BB4DEBB61F4D3E530033B9D7 /* sfx_flap.caf */,
+				BB4DEBB71F4D3E530033B9D7 /* sfx_goal.caf */,
+				BB4DEBB81F4D3E530033B9D7 /* sfx_punch.caf */,
+			);
+			path = SFX;
+			sourceTree = "<group>";
+		};
 		BBCC54951F48EB8F00A80C63 = {
 			isa = PBXGroup;
 			children = (
@@ -88,18 +100,9 @@
 				BBCC54AE1F48EB9000A80C63 /* Assets.xcassets */,
 				BBCC54B01F48EB9000A80C63 /* LaunchScreen.storyboard */,
 				BBCC54B31F48EB9000A80C63 /* Info.plist */,
-				BBF384C71F4A3587007A1289 /* SFX */,
+				BB4DEBB51F4D3E530033B9D7 /* SFX */,
 			);
 			path = HoppyBunny;
-			sourceTree = "<group>";
-		};
-		BBF384C71F4A3587007A1289 /* SFX */ = {
-			isa = PBXGroup;
-			children = (
-				BBF384C81F4A3587007A1289 /* sfx_flap.caf */,
-				BBF384C91F4A3587007A1289 /* sfx_goal.caf */,
-			);
-			path = SFX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB00EE2E1F490C9E005C8A99 /* Obstacle.sks in Resources */,
-				BBF384CB1F4A3587007A1289 /* sfx_goal.caf in Resources */,
+				BB4DEBBA1F4D3E530033B9D7 /* sfx_goal.caf in Resources */,
+				BB4DEBBB1F4D3E530033B9D7 /* sfx_punch.caf in Resources */,
 				BBCC54AD1F48EB9000A80C63 /* Main.storyboard in Resources */,
-				BBF384CA1F4A3587007A1289 /* sfx_flap.caf in Resources */,
+				BB4DEBB91F4D3E530033B9D7 /* sfx_flap.caf in Resources */,
 				BBCC54A41F48EB9000A80C63 /* GameScene.sks in Resources */,
 				BBCC54BC1F48EE0200A80C63 /* Hero.sks in Resources */,
 				BBCC54AF1F48EB9000A80C63 /* Assets.xcassets in Resources */,

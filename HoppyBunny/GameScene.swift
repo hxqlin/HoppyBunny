@@ -8,6 +8,8 @@
 
 import SpriteKit
 import GameplayKit
+import Foundation
+import AudioToolbox
 
 enum GameSceneState {
     case active, gameOver
@@ -33,7 +35,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     override func didMove(to view: SKView) {
         /* Set up your scene here */
-        
         
         /* Recursive node search for 'hero' (child of referenced node) */
         hero = self.childNode(withName: "//hero") as! SKSpriteNode
@@ -167,7 +168,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     func updateObstacles() {
         /* Update Obstacles */
         
+        if (points <= 10) {
         obstacleLayer.position.x -= scrollSpeed * CGFloat(fixedDelta)
+        } else {
+            obstacleLayer.position.x -= scrollSpeed * CGFloat(fixedDelta * 2)
+        }
         
         /* Loop through obstacle layer nodes */
         for obstacle in obstacleLayer.children as! [SKReferenceNode] {
@@ -235,6 +240,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             return
         }
         
+        /* Play SFX */
+        let deathSFX = SKAction.playSoundFileNamed("sfx_punch", waitForCompletion: false)
+        self.run(deathSFX)
+        
         /* Change game state to game over */
         gameState = .gameOver
         
@@ -254,6 +263,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.hero.zRotation = CGFloat(-90).degreesToRadians()
             /* Stop hero from colliding with anything else */
             self.hero.physicsBody?.collisionBitMask = 0
+            /* Make the device vibrate */
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
         })
         
         /* Run action */
@@ -271,5 +282,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         /* Show restart button */
         buttonRestart.state = .active
+        
     }
 }
